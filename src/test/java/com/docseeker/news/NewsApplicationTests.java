@@ -1,4 +1,4 @@
-package com.docseeker.News;
+package com.docseeker.news;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
