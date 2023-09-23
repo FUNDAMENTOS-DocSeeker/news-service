@@ -14,12 +14,12 @@ public class NewsRecordMapper implements Serializable {
     @Autowired
     EnhacedModelMapper mapper;
 
-    // from entity to model
+    // from model to entity
     public NewsRecord toModel(CreateNewsRecordResource resource) {
         return this.mapper.map(resource, NewsRecord.class);
     }
 
-    // from entity to model
+    // from model to entity
     public NewsRecord toModel(UpdateNewsRecordResource resource) {
         return this.mapper.map(resource, NewsRecord.class);
     }
