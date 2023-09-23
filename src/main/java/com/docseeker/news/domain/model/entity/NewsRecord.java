@@ -15,7 +15,7 @@ import lombok.Setter;
 public class NewsRecord {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
     @Column(length = 1000)
     private String title;
     @Column(length = 1000)
