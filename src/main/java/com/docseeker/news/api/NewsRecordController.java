@@ -25,8 +25,8 @@ public class NewsRecordController {
     }
 
     @GetMapping("")
-    public List<NewsRecord> fetchAll() {
-        return newsRecordService.getAll();
+    public ResponseEntity<List<NewsRecord>> fetchAll() {
+        return ResponseEntity.ok(newsRecordService.getAll());
     }
 
     @GetMapping("{id}")
